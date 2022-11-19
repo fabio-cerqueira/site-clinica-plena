@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body { 
@@ -13,12 +14,28 @@ h1 {
     font-family: 'Pluto Sans', sans-serif;
     font-size: 50px;
     font-weight: bolder;
-    // margin-left: 50px;
 }
 
+h2 {
+    font-family: 'Pluto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;    
+}
 
+h4 {
+    font-family: 'Pluto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+}
 
 p {
     font-size: 18px;
     font-weight: bold;
 }
+
+
+
+.container {
+    width: 1150px;
+    margin: auto;
+  }
