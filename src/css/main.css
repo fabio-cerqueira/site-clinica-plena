@@ -140,6 +140,25 @@ p {
   font-size: 15px;
   color: white;
 }
+.header .menu {
+  display: none;
+  width: 100vw;
+  background-color: white;
+  padding: 5px 0 0 20px;
+  line-height: 35px;
+}
+.header .menu a {
+  text-decoration: none;
+  color: black;
+}
+.header .menu a:hover {
+  color: rgb(230, 80, 105);
+}
+.header .menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .banner {
   display: flex;

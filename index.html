@@ -44,27 +44,27 @@
         </ul>
 
         <div class="navbar-menu-hamburger">
-          <input type="checkbox" id="checkbox-menu" />
+          <input type="checkbox" id="checkbox-menu"/>
 
-          <label for="checkbox-menu">
+          <label for="checkbox-menu" onclick="clickMenu()">
             <span></span>
             <span></span>
             <span></span>
           </label>
-
-          <!-- <ul for="checkbox-menu" class="menu">
-            <li>A Clínica</li>
-            <li>Estrutura</li>
-            <li>Tratamentos</li>
-            <li>Equipe</li>
-            <li>Depoimentos</li>
-          </ul> -->
         </div>
-
-        
 
         <button class="navbar-button">Faça uma avaliação grátis</button>
       </nav>
+
+      <ul id="menu" class="menu" onclick="clickMenuHidden()">
+        <a href="#about">
+          <li>A Clínica</li>
+        </a>
+        <li>Estrutura</li>
+        <li>Tratamentos</li>
+        <li>Equipe</li>
+        <li>Depoimentos</li>
+      </ul>
     </header>
 
     <section class="banner" id="home">
@@ -122,5 +122,23 @@
         </picture>
       </div>
     </section>
+    <script>
+      function clickMenu() {
+        if (menu.style.display == 'block') {
+          menu.style.display = 'none'
+        } else {
+          menu.style.display = 'block'
+        } 
+      }
+      
+      
+      function clickMenuHidden() {
+        const checkbox = document.getElementById("checkbox-menu")
+        checkbox.checked = false // desmarcou
+        menu.style.display = 'none';
+        
+      }
+
+    </script>
   </body>
 </html>
