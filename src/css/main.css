@@ -273,6 +273,7 @@ p {
   }
   .about .container .about-text {
     margin-top: 30px;
+    padding-top: 80px;
   }
 }
 @media (max-width: 425px) {
