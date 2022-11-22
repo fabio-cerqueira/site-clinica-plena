@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="scroll">
       <nav class="navbar">
         <picture class="navbar-logo">
           <a href="#home"
@@ -44,7 +44,7 @@
         </ul>
 
         <div class="navbar-menu-hamburger">
-          <input type="checkbox" id="checkbox-menu"/>
+          <input type="checkbox" id="checkbox-menu" />
 
           <label for="checkbox-menu" onclick="clickMenu()">
             <span></span>
@@ -122,23 +122,41 @@
         </picture>
       </div>
     </section>
-    <script>
-      function clickMenu() {
-        if (menu.style.display == 'block') {
-          menu.style.display = 'none'
-        } else {
-          menu.style.display = 'block'
-        } 
-      }
-      
-      
-      function clickMenuHidden() {
-        const checkbox = document.getElementById("checkbox-menu")
-        checkbox.checked = false // desmarcou
-        menu.style.display = 'none';
-        
-      }
 
-    </script>
+    <section class="structure" id="structure">
+      <div class="container">
+        <div class="structure-text">
+          <h4>NOSSA ESTRUTURA</h4>
+
+          <h2>Uma estrutura completa para atender você!</h2>
+
+          <p>
+            Possuímos uma estrutura ímpar no ramo de estética em Salvador. Com
+            salas preparadas, climatizadas e com profissionais preparados para
+            atender você.
+          </p>
+        </div>
+
+        <div class="structure-images">
+          <div>
+            <img src="src/image/structure-01.jpg" alt="" />
+          </div>
+          <div>
+            <img src="src/image/structure-02.jpg" alt="" />
+          </div>
+          <div>
+            <img src="src/image/structure-03.jpg" alt="" />
+          </div>
+          <div>
+            <img src="src/image/structure-04.jpg" alt="" />
+          </div>
+          <div>
+            <img src="src/image/structure-05.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/script/sccript.js"></script>
   </body>
 </html>
