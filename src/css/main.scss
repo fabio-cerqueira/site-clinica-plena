@@ -9,7 +9,7 @@
   left: 0;
   top: 0%;
   margin-top: 0;
-  
+
   .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -151,7 +151,7 @@
   background-image: url(../image/bg-banner-g.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   h1 {
     width: 600px;
     padding-bottom: 13px;
@@ -167,6 +167,7 @@
 
 .about {
   width: 100vw;
+  margin-bottom: 20px;
 
   .container {
     display: flex;
@@ -209,19 +210,51 @@
 
 .structure {
   width: 100vw;
+  background-color: #faf8f4;
 
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .structure-text {
+      width: 570px;
+      margin-top: 120px;
+      padding: 20px 10px;
+      text-align: center;
+
+      h4 {
+        color: $color-secondary;
+        letter-spacing: 5.77px;
+      }
+
+      h2 {
+        margin: 15px 0;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        color: #6f6f6f;
+        text-align: justify;
+      }
     }
 
     .structure-images {
-      display: inline-flex;
+      display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
+      width: 900px;
+      height: 100vh;
+      margin: 40px auto;
+      align-items: center;
 
       div {
+        margin: 6px;
+        width: 32%;
+
         img {
-          width: 40%;
+          width: 100%;
         }
       }
     }
@@ -240,6 +273,8 @@
   }
 
   .about {
+    height: 1550px;
+
     .container {
       width: 100vw;
       flex-direction: column;
@@ -266,10 +301,51 @@
       .about-image {
         margin-top: 0;
         width: 100%;
-        height: 535px;
+        height: 565px;
 
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .structure {
+    height: 1450px;
+
+    .container {
+      width: 100vw;
+      flex-direction: column;
+
+      .structure-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 95px;
+
+        h4 {
+          -webkit-text-stroke-width: 0.5px; /* largura da borda */
+          -webkit-text-stroke-color: $color-secondary; /* cor da borda */
+        }
+
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          text-align: justify;
+        }
+      }
+
+      .structure-images {
+        margin-top: 0;
+        width: 100%;
+        height: 1200px;
+
+        div {
+          width: 45%;
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -299,11 +375,27 @@
   }
 
   .about {
+    height: 1550px;
     .container {
-      
       .about-text {
         margin-top: 30px;
         padding-top: 80px;
+      }
+    }
+  }
+
+  .structure {
+    .container {
+      .structure-text {
+        margin-top: 70px;
+      }
+
+      .structure-images {
+        height: 1250px;
+
+        div {
+          width: 49%;
+        }
       }
     }
   }
@@ -312,9 +404,8 @@
 @media (max-width: 425px) {
   .banner {
     height: 95vh;
-    // margin-top: 70px;
     background-image: url(../image/bg-banner-p.jpg);
-    
+
     h1 {
       width: 100%;
       font-size: 36px;
@@ -331,6 +422,33 @@
       -webkit-text-stroke-width: 0.5px; /* largura da borda */
       -webkit-text-stroke-color: $color-secondary; /* cor da borda */
       padding: 0 7px;
+    }
+  }
+
+  .about {
+    height: 1300px;
+    margin-top: -50px;
+  }
+
+  .structure {
+    height: 950px;
+    margin-top: -50px;
+
+    .container {
+      height: 940px;
+
+      .structure-text {
+        margin-top: 80px;
+      }
+
+      .structure-images {
+        height: 650px;
+        // flex-wrap: nowrap;
+
+        div {
+          width: 45%;
+        }
+      }
     }
   }
 }
