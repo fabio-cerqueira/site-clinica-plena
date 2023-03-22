@@ -4,8 +4,7 @@ document.addEventListener("scroll", function () {
   var posicaoy = window.pageYOffset;
   console.log(posicaoy);
   navbar.style.backgroundColor = posicaoy == 0 ? "transparent" : "white";
-  navbar.style.boxShadow =
-  posicaoy == 0 ? "none" : "0 0 15px 0 rgb(0 0 0 / 8%)";
+  navbar.style.boxShadow = posicaoy == 0 ? "none" : "0 0 15px 0 rgb(0 0 0 / 8%)";
 });
 
 //Menu Mobile
